@@ -8,7 +8,7 @@ const liText = document.createElement("span");
 
 button.addEventListener('click',function(){
     const item = input.value; 
-    input.value = " ";
+        input.value = " ";
 
     li.appendChild(liText);
     liText.innerText = item;
@@ -17,3 +17,7 @@ button.addEventListener('click',function(){
     list.appendChild(li);
 
 }); 
+
+liButton.addEventListener('click', function(){
+    list.removeChild(li);
+});
