@@ -16,8 +16,4 @@ button.addEventListener('click',function(){
     liButton.innerText = "Delete";
     list.appendChild(li);
 
-
-
-    console.log(li);
-
 }); 
