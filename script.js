@@ -2,11 +2,11 @@ const button = document.querySelector("button");
 const list = document.querySelector("ul");
 const input = document.querySelector("input");
 
-const li = document.createElement("li");
-const liButton = document.createElement("button");
-const liText = document.createElement("span");
-
 button.addEventListener('click',function(){
+    const li = document.createElement("li");
+    const liButton = document.createElement("button");
+    const liText = document.createElement("span");
+    
     const item = input.value; 
         input.value = " ";
 
@@ -16,11 +16,9 @@ button.addEventListener('click',function(){
     liButton.innerText = "Delete";
     list.appendChild(li);
 
-    input.focus();
+    liButton.addEventListener('click', function(){
+        list.removeChild(li);
 
+    input.focus();
 }); 
-
-liButton.addEventListener('click', function(){
-    list.removeChild(li);
-    input.focus();
 });
