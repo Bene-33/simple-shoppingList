@@ -11,9 +11,9 @@ button.addEventListener('click',function(){
         input.value = " ";
 
     li.appendChild(liText);
-    liText.innerText = item;
+    liText.innerContent = item;
     li.appendChild(liButton);
-    liButton.innerText = "Delete";
+    liButton.innerContent = "Delete";
     list.appendChild(li);
 
     liButton.addEventListener('click', function(){
