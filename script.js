@@ -1,5 +1,5 @@
 const button = document.querySelector("button");
-const List = document.querySelector("ul");
+const list = document.querySelector("ul");
 const input = document.querySelector("input");
 
 const li = document.createElement("li");
@@ -12,6 +12,12 @@ button.addEventListener('click',function(){
 
     li.appendChild(liText);
     liText.innerText = item;
+    li.appendChild(liButton);
+    liButton.innerText = "Delete";
+    list.appendChild(li);
 
-    console.log(li)
+
+
+    console.log(li);
+
 }); 
