@@ -16,8 +16,11 @@ button.addEventListener('click',function(){
     liButton.innerText = "Delete";
     list.appendChild(li);
 
+    input.focus();
+
 }); 
 
 liButton.addEventListener('click', function(){
     list.removeChild(li);
+    input.focus();
 });
