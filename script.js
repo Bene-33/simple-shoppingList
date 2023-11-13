@@ -9,6 +9,4 @@ const liText = document.createElement("span");
 button.addEventListener('click',function(){
     const item = input.value; 
     input.value = " ";
-
-    console.log(item);
 }); 
