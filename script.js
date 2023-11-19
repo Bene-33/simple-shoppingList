@@ -15,8 +15,6 @@ button.addEventListener('click',function(){
     liButton.textContent = "Delete";
     list.appendChild(li);
 
-console.log(liText);
-
     liButton.addEventListener('click', function(){
         list.removeChild(li);
 
