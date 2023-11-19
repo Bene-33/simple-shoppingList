@@ -8,13 +8,14 @@ button.addEventListener('click',function(){
     const liText = document.createElement("span");
     
     const item = input.value; 
-        input.value = " ";
-
+        
     li.appendChild(liText);
-    liText.innerContent = item;
+    liText.textContent = item;
     li.appendChild(liButton);
-    liButton.innerContent = "Delete";
+    liButton.textContent = "Delete";
     list.appendChild(li);
+
+console.log(liText);
 
     liButton.addEventListener('click', function(){
         list.removeChild(li);
